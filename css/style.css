@@ -16,10 +16,15 @@
 
 ul li {
     list-style: none;
-   margin: 0;
-    
+    margin: 0;
+
 }
-ul {
+
+ul,
+h1,
+h2,
+h3,
+p {
     margin: 0;
     padding: 0;
 }
@@ -66,14 +71,14 @@ a {
     font-family: Raleway;
     letter-spacing: 0.78px;
     color: var(--primary-text-color);
-   margin-right: 93px;
+    margin-right: 93px;
 
 }
 
 .heder__logo span {
     color: var(--link-text-color);
 
-    
+
 }
 
 .nav__link {
@@ -82,6 +87,7 @@ a {
     color: var(--primary-text-color);
 
 }
+
 .nav__iteam {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -126,7 +132,8 @@ a {
     background: var(--fons-background-color);
 
 }
-.herow__container{
+
+.herow__container {
     padding-top: 200px;
     padding-bottom: 200px;
     display: flex;
@@ -149,7 +156,7 @@ a {
     margin-top: 0;
     margin-bottom: 0;
     max-width: 700px;
-    
+
 }
 
 .button {
@@ -171,13 +178,27 @@ button:focus {
     background-color: #2195f3ab;
 }
 
-.item {
+
+.features__container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.features__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+.features__title {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.42px;
+    margin-bottom: 10px;
 }
 
-.item__text {
+.features__text {
     color: var(--item-text-color);
     line-height: 171.429%;
     /* 24px */
