@@ -11,46 +11,82 @@
 .body {
     font-family: Roboto;
     color: var(--primary-text-color);
+
 }
 
-ul {
+ul li {
     list-style: none;
-
+   margin: 0;
+    
+}
+ul {
+    margin: 0;
+    padding: 0;
 }
 
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+
+}
 
 
 
 
 
 /* ------------------------Heder-------------------------------- */
+
+.header {
+    width: 100%;
+
+}
+
+
+
+.header__container {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.nav__list {
+    display: flex;
+    column-gap: 50px;
+}
+
 .heder__logo {
     font-size: 26px;
     font-weight: 700;
-    text-decoration: none;
     font-family: Raleway;
     letter-spacing: 0.78px;
     color: var(--primary-text-color);
-
+   margin-right: 93px;
 
 }
 
 .heder__logo span {
     color: var(--link-text-color);
-    text-decoration: none;
 
-
+    
 }
 
 .nav__link {
     font-weight: 500;
     letter-spacing: 0.28px;
-    text-decoration: none;
     color: var(--primary-text-color);
 
-
-
 }
+.nav__iteam {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 
 .nav__link:hover,
 .nav__link:focus {
@@ -74,15 +110,34 @@ ul {
 
 }
 
+.contact {
+    display: flex;
+    margin-left: auto;
+    column-gap: 50px;
+}
+
+
+
+
+
 /* -----------------------MAIN--------------------------- */
 
 .herow {
-    background:var(--fons-background-color);
+    background: var(--fons-background-color);
 
 }
+.herow__container{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
 
-.herow__article {
-    color:var(--hero-text-color);
+.herow__title {
+    color: var(--hero-text-color);
     text-align: center;
     font-family: Roboto;
     font-size: 44px;
@@ -91,6 +146,10 @@ ul {
     /* 60px*/
     letter-spacing: 2.64px;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 700px;
+    
 }
 
 .button {
@@ -104,6 +163,7 @@ ul {
     letter-spacing: 0.96px;
     background-color: var(--link-text-color);
     cursor: pointer;
+    padding: 10px 32px;
 }
 
 .button:hover,
@@ -135,11 +195,11 @@ button:focus {
 
 /* ---------------FOOTER---------------------------- */
 .footer {
-    background:var(--fons-background-color);
+    background: var(--fons-background-color);
 }
 
 .address {
-    color:var(--adres-text-color);
+    color: var(--adres-text-color);
     line-height: 171.429%;
     /*24px */
     letter-spacing: 0.42px;
