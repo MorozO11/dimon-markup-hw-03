@@ -5,6 +5,7 @@
     --fons-background-color: #2F303A;
     --adres-text-color: #FFF;
     --hero-text-color: #FFF;
+    --team-background-color: #F5F4FA;
 }
 
 
@@ -33,6 +34,7 @@ p {
     max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
+    border: 5px solid #2196F3;
 }
 
 a {
@@ -48,6 +50,8 @@ a {
 
 .header {
     width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
 }
 
@@ -56,7 +60,6 @@ a {
 .header__container {
     display: flex;
     align-items: center;
-
 }
 
 
@@ -88,10 +91,7 @@ a {
 
 }
 
-.nav__iteam {
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
+.nav__iteam {}
 
 
 .nav__link:hover,
@@ -211,13 +211,103 @@ button:focus {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.08px;
+
+}
+
+.item {
+    color: var(--primary-text-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.item__text {
+    color: var(--item-text-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.48px;
+}
+
+.img__list {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 50px;
 }
 
 
+.team {
+    background: var(--team-background-color)
+}
+
+.team__container {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+/* PPRTFOLIO */
+
+.filter__container {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.filter__list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+
+
+.filter__button {
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    /* 162.5% */
+    letter-spacing: 0.48px;
+    padding: 6px 22px;
+    cursor: pointer;
+}
+
+.filter__button:hover,
+.filter__button:focus {
+    background-color: #2195f3ab;
+
+}
+
+.examples__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 94px;
+}
+
+.border{
+    border: 1px solid #EEEEEE}
 /* ---------------FOOTER---------------------------- */
 .footer {
     background: var(--fons-background-color);
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
+
+
+
 
 .address {
     color: var(--adres-text-color);
@@ -225,6 +315,8 @@ button:focus {
     /*24px */
     letter-spacing: 0.42px;
     font-style: normal;
+    padding-top: 20px;
+    padding-bottom: 9px;
 
 
 }
@@ -237,6 +329,8 @@ button:focus {
     line-height: normal;
     letter-spacing: 0.78px;
     text-decoration: none;
+    padding-bottom: 20px;
+
 }
 
 .footer__logo span {
@@ -246,6 +340,12 @@ button:focus {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.78px
+}
+
+
+
+.contact__iteam {
+    padding-bottom: 9px;
 }
 
 .nav__link--footer {
