@@ -35,9 +35,10 @@ p {
     max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
-    
+
 }
-.section{
+
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -55,7 +56,8 @@ a {
 
 .header {
     width: 100%;
-    border: 1px solid var(--border-backgraund-color);}
+    border: 1px solid var(--border-backgraund-color);
+}
 
 
 
@@ -169,7 +171,7 @@ a {
 
 }
 
-.button {
+.herow__button {
     color: #FFF;
     font-family: Roboto;
     text-align: center;
@@ -181,16 +183,20 @@ a {
     background-color: var(--link-text-color);
     cursor: pointer;
     padding: 10px 32px;
+    border: none;
+    border-radius: 4px;
 }
 
-.button:hover,
-button:focus {
+.herow__button:hover,
+.herow__button:focus {
     background-color: #2195f3ab;
+    transition: 0.7s
 }
 
-.features__section{
+.features__section {
     padding-bottom: 0px;
 }
+
 /* 
 .features__container {
     padding-top: 94px;
@@ -218,7 +224,14 @@ button:focus {
     letter-spacing: 0.42px;
 }
 
-.title {
+
+.team__card {
+    border-radius: 0px 0px 4px 4px;
+    background: var(--hero-text-color);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.team__title,.box__title {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -227,7 +240,7 @@ button:focus {
 
 }
 
-.item {
+.team__name {
     color: var(--primary-text-color);
     text-align: center;
     font-family: Roboto;
@@ -238,20 +251,22 @@ button:focus {
     padding-bottom: 10px;
 }
 
-.item__text {
+.team__specialty {
     color: var(--item-text-color);
     text-align: center;
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;
+    padding-bottom: 30px;
 }
 
 /* .img__container {
     padding-bottom: 94px;
 } */
 
-.img__list {
+.box__list,
+.team__list {
     display: flex;
     gap: 30px;
     justify-content: space-around;
@@ -284,6 +299,8 @@ button:focus {
 
 
 
+
+
 .filter__button {
     color: #212121;
     text-align: center;
@@ -303,8 +320,9 @@ button:focus {
 
 .filter__button:hover,
 .filter__button:focus {
+    color: var(--adres-text-color);
     background-color: var(--link-text-color);
-
+    transition:all .2s linear;
 }
 
 .examples__list {
@@ -314,7 +332,7 @@ button:focus {
     justify-content: space-around;
 }
 
-.item__portfolio {
+.projekt__name {
     font-size: 18px;
     line-height: 36px;
     /* 200% */
@@ -324,15 +342,16 @@ button:focus {
 
 }
 
-.item__text--portfolio {
+.projekt__direction{
     color: var(--item-text-color);
     line-height: 30px;
     /* 187.5% */
     letter-spacing: 0.48px;
     padding-left: 24px;
+    padding-bottom: 20px;
 }
 
-.border {
+.projekt {
     border: 1px solid var(--border-backgraund-color);
 }
 
